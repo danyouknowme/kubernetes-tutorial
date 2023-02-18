@@ -1,7 +1,7 @@
 # Kubernetes tutorial
 
 
-[Kubernetes Crash Course for Absolute Beginnersn](https://www.youtube.com/watch?v=s_o8dwzRlu4)
+[Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=s_o8dwzRlu4)
 
 
 ### Commands
@@ -54,6 +54,11 @@ kubectl describe <resourceType> <resourceName>
 #### view logs of container
 ```
 kubectl logs <podName>
+```
+
+#### port forwarding to access applications
+```
+kubectl port-forward <resourceType>/<resourceName> <localPort>:<remotePort>
 ```
 
 #### get minikube ip address
